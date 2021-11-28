@@ -1,9 +1,70 @@
-.App {
-  text-align: center;
+.body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  background-color: grey;
+}
+.USA-flag {
+    width:900px;
+    min-width: 900px;
+    height: 450px;
+    position: relative;
+}
+.USA-stripes {
+    width: 100%;
+    height: calc(450px / 13);
+}
+.stripe {
+    background-color: #B22234;
+    width: 100%;
+    height: calc(450px / 13);
+}
+.white {
+    background-color: white;
+    width: 100%;
+    height: calc(450px / 13);
+}
+.USA-stars {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 378px;
+    height: calc((450px / 13) * 7);
+    background-color: #041e42;
+    z-index: 1;
+    padding: 12px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.star {
+    font-size: 20px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    margin-top: -4px;
+}
+.six-row {
+    display: flex;
+    justify-content: space-between;
+}
+.five-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 33px;
 }
 
+
 .App-logo {
-  height: 40vmin;
+  height: 100vmin;
   pointer-events: none;
 }
 
@@ -14,7 +75,7 @@
 }
 
 .App-header {
-  background-color: #282c34;
+
   min-height: 100vh;
   display: flex;
   flex-direction: column;
